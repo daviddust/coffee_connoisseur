@@ -1,9 +1,9 @@
 version: '3'
 services:
     db:
-        image: postgres:9.6
+        image: mongo:latest
         volumes:
-            - "dbdata:/var/lib/postgresql/data"
+            - "dbdata:/data/db"
         env_file:
             - env
         networks:
